@@ -140,7 +140,7 @@ nav {
 
 }
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 main {
     width:100%;
@@ -344,7 +344,7 @@ button span {
 }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
     #centrale {
         display:flex;
@@ -477,7 +477,7 @@ button span {
 }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 
     
@@ -489,7 +489,7 @@ button span {
 } 
 
 #hebergement-marseille {
-    flex-direction:row wrap;
+    flex-direction:row;
     justify-content: space-around;
 }
 
@@ -611,7 +611,7 @@ div.pop {
 }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 aside {
     width:100%;
@@ -764,64 +764,21 @@ div.pop {
     width:100%;
     gap:20px;
 }
-#card1 {
+#activites-marseille article {
     width:100%;
     height:190px;
 }
 
-#card2 {
-    width:100%;
-    height:190px;
-}
-
-#card3 {
-    width:100%;
-    height:190px;
-}
-#card4 {
-    width:100%;
-    height:190px;
-}
-#card5 {
-    width:100%;
-    height:190px;
-}
-#card6 {
-    width:100%;
-    height:190px;
-}
-
-#card1 img {
+#activites-marseille img {
     height:130px;
 }
 
 #card1 h3 {
     height:60px;
 }
-
-#card2 img {
-    height:130px;
-}
-
-#card3 img {
-    height:130px;
-}
-
-#card4 img {
-    height:130px;
-}
-
-#card5 img {
-    height:130px;
-}
-
-#card6 img {
-    height:130px;
-}
-
 }  
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 #activites {
     width:90%;
@@ -894,7 +851,7 @@ footer {
 
 }
 
-@media screen and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 
 footer {
