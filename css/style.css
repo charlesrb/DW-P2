@@ -13,7 +13,7 @@
 
 body {  
     font-family: 'Raleway', sans-serif;
-    font-size:400;
+    font-weight:400;
   }
   
 main, header {
@@ -346,10 +346,10 @@ button span {
 
 #hebergement-marseille {
     display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap:30px;
-    margin-left:auto;
+    justify-content: center;    
+    margin:0 auto;
 }
 
 .card {
@@ -554,7 +554,7 @@ aside {
     padding:0px;
 }
 
-ul.pop {
+div.pop {
     padding:0; 
 }
 }
