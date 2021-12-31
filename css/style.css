@@ -14,12 +14,13 @@
 body {  
     font-family: 'Raleway', sans-serif;
     font-weight:400;
+    margin:0 auto;
   }
   
 main, header {
     max-width:1440px;
     width:95%;  
-    margin:auto;
+    margin:0 auto;
   }
 
 a {
@@ -39,9 +40,7 @@ h3, p {
     font-size:16px;
 }
 
-main {
-        width:100%;
-    }
+
 header {
     display:flex;
     justify-content:space-between;
@@ -77,6 +76,9 @@ header {
 
 @media screen and (max-width: 768px)
 {
+main {
+    width:100%;
+}
 #hero {
     width:90%;
     margin:auto;
@@ -138,6 +140,16 @@ nav {
 
 }
 
+@media screen and (max-width: 992px)
+{
+main {
+    width:100%;
+}
+#hero {
+    width:90%;
+    margin:auto;
+}
+}
 /* FILTRES */
 
 
@@ -331,6 +343,19 @@ button span {
         gap:0;
 }
 }
+
+@media screen and (max-width: 992px)
+{
+    #centrale {
+        display:flex;
+        flex-direction: column-reverse;
+        margin-top:20px;
+        gap:0;
+}
+}
+
+
+
 /* HEBERGEMENT A MARSEILLE */
 
 #heb-marseille {
@@ -451,6 +476,33 @@ button span {
     margin:30px 10px;
 }
 }
+
+@media screen and (max-width: 992px)
+{
+
+    
+#heb-marseille {
+    width:100%;
+    margin:0;
+    background-color: #fff;    
+    padding:20px;     
+} 
+
+#hebergement-marseille {
+    flex-direction:row wrap;
+    justify-content: space-around;
+}
+
+#heb-marseille h2 {
+    margin:20px 0 20px 25px;
+}
+
+
+.plus {
+    margin:30px 0 20px 25px;
+}
+}
+
 /* HEBERGEMENTS POPULAIRES */
 
 aside {
@@ -538,6 +590,28 @@ aside {
 }
 
 @media screen and (max-width: 768px)
+{
+aside {
+    width:100%;
+    margin:auto;
+    flex-basis:100%;
+    border-radius:0px;
+    padding:20px;     }
+
+#heb-marseille {
+    width:100%;
+}
+
+#title-aside {
+    padding:0px;
+}
+
+div.pop {
+    padding:0; 
+}
+}
+
+@media screen and (max-width: 992px)
 {
 aside {
     width:100%;
@@ -747,6 +821,29 @@ div.pop {
 
 }  
 
+@media screen and (max-width: 992px)
+{
+#activites {
+    width:90%;
+    margin:auto;
+}
+
+#activites-marseille {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:50px;
+    height:100%;
+
+}
+.column {
+    display:flex;
+    flex-direction: column;
+    width:45%;
+    justify-content: space-between;
+}
+
+}
+
 /* FOOTER */
 
 footer {
@@ -796,3 +893,18 @@ footer {
 
 
 }
+
+@media screen and (max-width: 992px)
+{
+
+footer {
+    padding:25px;
+}
+
+#footer {
+    justify-content: space-around;
+    gap:150px;
+}
+}
+
+
