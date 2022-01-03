@@ -154,13 +154,13 @@ main {
 /* FILTRES */
 
 
-.recherche {
+.search-bar {
     display:flex;
     max-width: 35%;
     min-width:400px;
 }
 
-.button-r {
+.btn-search {
     background-color: var(--hardBlue);
     border-style:none;
     border-radius: 0 10px 10px 0;
@@ -171,7 +171,7 @@ main {
     cursor:pointer;
 }
 
-.button-r:hover {
+.btn-search:hover {
     background-color: var(--lightBlue);
     color:var(--hardBlue);
 }
@@ -195,7 +195,7 @@ main {
 }
 
 
-.search {
+.filters {
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -204,7 +204,7 @@ main {
     height:50px;
 }
 
-.filtre {
+.filter {
     border:2px solid var(--hardGrey);
     border-radius:40px;
     display:flex;
@@ -214,11 +214,11 @@ main {
     cursor: pointer;
     }
 
-.filtre:hover {
+.filter:hover {
     border:2px solid var(--hardBlue);
 }
     
-.titre-search {
+.title-filters {
     display:flex;
     font-weight: 700;
 }
@@ -271,7 +271,7 @@ input[type="checkbox"] {
     margin:-2px;
 }
 
-.label-filtre {
+.label-filter {
     margin-left:15px;
     font-weight: 700;
 }
@@ -288,14 +288,14 @@ button span {
     display:none;
 }
 
-.recherche {
+.search-bar {
     max-width: 40%;
     min-width:95%;
     position:relative;
 
 }
 
-.button-r {
+.btn-search {
     border-radius: 10px;
     width:50px;
     height: 50px;
@@ -305,17 +305,17 @@ button span {
     padding:0;
 
 }
-.search {
+.filters {
     flex-wrap: wrap;
     gap:5px;
     height:100%;
     margin-top:20px;
 }
-.titre-search {
+.title-filters {
     flex-basis:100%;
     margin:0;
     }
-.titre-search h3 {
+.title-filters h3 {
     font-size:22px;
     font-weight:700;
 }
@@ -328,7 +328,7 @@ button span {
 
 /* MAIN */
 
-#centrale {
+#central {
     display:flex;
     flex-direction: row;
     gap:40px;
@@ -337,7 +337,7 @@ button span {
 
 @media screen and (max-width: 768px)
 {
-    #centrale {
+    #central {
         display:flex;
         flex-direction: column-reverse;
         margin-top:20px;
@@ -347,7 +347,7 @@ button span {
 
 @media screen and (min-width:768px) and (max-width: 992px)
 {
-    #centrale {
+    #central {
         display:flex;
         flex-direction: column-reverse;
         margin-top:20px;
@@ -359,18 +359,18 @@ button span {
 
 /* HEBERGEMENT A MARSEILLE */
 
-#heb-marseille {
+#accomodation-list {
     background-color: var(--lightGrey);
     border-radius: 50px;
     width:65%;
     padding:45px 0 45px 10px;
 }
 
-#heb-marseille h2 {
+#accomodation-list h2 {
     margin-left:50px;
 }
 
-#hebergement-marseille {
+#accomodation-cards {
     display:flex;
     flex-wrap: wrap;
     gap:30px;
@@ -451,7 +451,7 @@ button span {
 {
 
     
-#heb-marseille {
+#accomodation-list {
     width:100%;
     margin:0;
     flex-basis:100%;
@@ -459,14 +459,14 @@ button span {
     padding:20px;     
 } 
 
-#hebergement-marseille {
+#accomodation-cards {
     flex-direction:column;
     margin:auto;
     gap:10px;
     padding:0px;
 }
 
-#heb-marseille h2 {
+#accomodation-list h2 {
     margin:20px 0 20px 0;
 }
 .card {
@@ -482,19 +482,19 @@ button span {
 {
 
     
-#heb-marseille {
+#accomodation-list {
     width:100%;
     margin:0;
     background-color: #fff;    
     padding:20px;     
 } 
 
-#hebergement-marseille {
+#accomodation-cards {
     flex-direction:row;
     justify-content: space-around;
 }
 
-#heb-marseille h2 {
+#accomodation-list h2 {
     margin:20px 0 20px 25px;
 }
 
@@ -599,7 +599,7 @@ aside {
     border-radius:0px;
     padding:20px;     }
 
-#heb-marseille {
+#accomodation-list {
     width:100%;
 }
 
@@ -621,7 +621,7 @@ aside {
     border-radius:0px;
     padding:20px;     }
 
-#heb-marseille {
+#accomodation-list {
     width:100%;
 }
 
@@ -633,15 +633,15 @@ div.pop {
     padding:0; 
 }
 }
-/* ACTIVITES */
+/* activities */
 
-#activites {
+#activities {
     display:flex;
     flex-direction: column;
     margin-top:60px;
 }
 
-#activites-marseille {
+#activities-marseille {
     display:flex;
     gap:40px;
     justify-content: space-between;
@@ -656,24 +656,24 @@ div.pop {
     justify-content: space-between;
 }
 
-#activites-marseille article {
+#activities-marseille article {
     display:block;    
     background-color: #fff;
     border-radius:25px;
     box-shadow: 5px 5px 5px 0px #E2E2E2;
 }
 
-#activites-marseille a {
+#activities-marseille a {
     display:block;
     transition: 300ms ease;
 
 }
 
-#activites-marseille a:hover {
+#activities-marseille a:hover {
     transform:scale(1.03);
 }
 
-#activites-marseille h3 {
+#activities-marseille h3 {
     height:55px;
     padding-left:20px;
     
@@ -749,11 +749,11 @@ div.pop {
 }
 @media screen and (max-width: 768px)
 {
-#activites {
+#activities {
     width:90%;
     margin:auto;
 }
-#activites-marseille {
+#activities-marseille {
     flex-direction: column;
     justify-content: flex-start;
     gap:20px;
@@ -765,12 +765,12 @@ div.pop {
     width:100%;
     gap:20px;
 }
-#activites-marseille article {
+#activities-marseille article {
     width:100%;
     height:190px;
 }
 
-#activites-marseille img {
+#activities-marseille img {
     height:130px;
 }
 
@@ -781,12 +781,12 @@ div.pop {
 
 @media screen and (min-width:768px) and (max-width: 992px)
 {
-#activites {
+#activities {
     width:90%;
     margin:auto;
 }
 
-#activites-marseille {
+#activities-marseille {
     flex-wrap: wrap;
     justify-content: space-between;
     gap:50px;
@@ -840,6 +840,10 @@ footer h3 {
 
 footer {
     padding:20px 0 20px 20px;
+    flex-direction: column;
+    height:100%;
+    gap:20px;
+    padding:0;
 }
 #footer {
     flex-direction: column;
@@ -857,6 +861,8 @@ footer {
 
 footer {
     padding:25px;
+    justify-content: space-around;
+    gap:150px;
 }
 
 #footer {
