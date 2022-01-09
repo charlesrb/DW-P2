@@ -1,3 +1,5 @@
+/* GENERAL RULES */
+
 :root {
     --lightGrey: #f2f2f2;
     --hardGrey: #d9d9d9;
@@ -40,18 +42,7 @@ h3, p {
     font-size:16px;
 }
 
-
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    max-height:120px;
-    margin:auto;
-    padding-top:20px;
-    padding-bottom:25px;
-}
-
-/* HEADER */
+/* HEADER DESKTOP */
 
 header {
     display: flex;
@@ -60,6 +51,7 @@ header {
     flex-wrap:wrap;
     padding:0;
 }
+
 .logo-booki {
     width: 97px;
     margin: 20px 0;
@@ -68,6 +60,7 @@ header {
 nav {
     height:90px;
 }
+
 #menu {
     display: flex;
     justify-content: center;
@@ -91,9 +84,9 @@ nav {
 .liste-menu:hover {
         color:var(--hardBlue);
         border-top:3px solid var(--hardBlue);
-    
 }
 
+/* HEADER MOBILE */
 
 @media screen and (max-width: 768px)
 {
@@ -132,7 +125,6 @@ nav {
     height:100%;
     margin:0;
     padding:0;
-
 }
 
 .liste-menu {
@@ -147,13 +139,11 @@ nav {
     padding-bottom:15px;
     border-bottom:3px solid var(--hardGrey);
     border-top:2px var(--hardGrey) transparent;
-
 }
 
 .liste-menu:hover {
     color:var(--hardBlue);
     border-bottom:3px solid var(--hardBlue);
-
 }
 
 .liste-menu a:hover {
@@ -161,6 +151,8 @@ nav {
 }
 
 }
+
+/* HEADER TABLETTE */
 
 @media screen and (min-width:769px) and (max-width: 992px)
 {
@@ -172,8 +164,8 @@ main {
     margin:auto;
 }
 }
-/* FILTRES */
 
+/* FILTRES DESKTOP */
 
 .search-bar {
     display:flex;
@@ -214,7 +206,6 @@ main {
     background-color:var(--lightGrey);
     border-radius:10px 0 0 10px;
 }
-
 
 .filters {
     display:flex;
@@ -296,6 +287,8 @@ input[type="checkbox"] {
     font-weight: 700;
 }
 
+/* FILTRES MOBILE */
+
 @media screen and (max-width: 768px)
 {
 
@@ -345,7 +338,6 @@ button span {
 }
 }
 
-
 /* MAIN */
 
 #central {
@@ -375,9 +367,7 @@ button span {
 }
 }
 
-
-
-/* HEBERGEMENT A MARSEILLE */
+/* HEBERGEMENT A MARSEILLE DESKTOP */
 
 #accomodation-list {
     background-color: var(--lightGrey);
@@ -452,7 +442,6 @@ button span {
 
 }
 
-
 .plus {
     font-size:18px;
     font-weight: 700;
@@ -467,10 +456,10 @@ button span {
     color:var(--hardGrey);
 }
 
+/* HEBERGEMENT A MARSEILLE MOBILE */
+
 @media screen and (max-width: 768px)
 {
-
-    
 #accomodation-list {
     width:100%;
     margin:0;
@@ -498,33 +487,37 @@ button span {
 }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px)
-{
+/* HEBERGEMENT A MARSEILLE TABLETTE */
 
-    
+@media screen and (min-width:769px) and (max-width: 992px)
+{   
 #accomodation-list {
     width:100%;
-    margin:0;
+    margin:auto;
     background-color: #fff;    
     padding:20px;     
 } 
 
 #accomodation-cards {
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin:0 25px 0 25px;
 }
 
 #accomodation-list h2 {
     margin:20px 0 20px 25px;
 }
 
-
 .plus {
     margin:30px 0 20px 25px;
 }
+
+.card {
+    width:300px;
+}
 }
 
-/* HEBERGEMENTS POPULAIRES */
+/* HEBERGEMENTS POPULAIRES DESKTOP */
 
 aside {
     background-color: var(--lightGrey);
@@ -610,6 +603,8 @@ aside {
     padding-top:0px;
 }
 
+/* HEBERGEMENTS POPULAIRES MOBILE */
+
 @media screen and (max-width: 768px)
 {
 aside {
@@ -632,7 +627,9 @@ div.pop {
 }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px)
+/* HEBERGEMENTS POPULAIRES TABLETTE */
+
+@media screen and (min-width:769px) and (max-width: 992px)
 {
 aside {
     width:100%;
@@ -653,7 +650,8 @@ div.pop {
     padding:0; 
 }
 }
-/* activities */
+
+/* ACTIVITIES DESKTOP */
 
 #activities {
     display:flex;
@@ -696,13 +694,12 @@ div.pop {
 #activities-marseille h3 {
     height:55px;
     padding-left:20px;
-    
-    
-   
 }
+
 #card1 {
     height: 450px;
 }
+
 #card1 img {
     width:100%;
     height:395px;
@@ -767,6 +764,9 @@ div.pop {
     object-position: center;
     border-radius:25px 25px 0 0;
 }
+
+/* ACTIVITIES MOBILE */
+
 @media screen and (max-width: 768px)
 {
 #activities {
@@ -799,7 +799,9 @@ div.pop {
 }
 }  
 
-@media screen and (min-width:768px) and (max-width: 992px)
+/* ACTIVITIES TABLETTE */
+
+@media screen and (min-width:769px) and (max-width: 992px)
 {
 #activities {
     width:90%;
@@ -822,7 +824,7 @@ div.pop {
 
 }
 
-/* FOOTER */
+/* FOOTER DESKTOP */
 
 footer {
     width:100%;
@@ -830,8 +832,6 @@ footer {
     margin-top:60px;
     padding-top:45px;
     padding-bottom:55px;
-
-    
 }
 
 #footer {
@@ -845,6 +845,7 @@ footer {
     gap:200px;
     padding-top:20px;
 }
+
 footer ul {
     list-style-type:none;
     padding-left:0px;
@@ -854,6 +855,8 @@ footer ul {
 footer h3 {
     margin-bottom:20px;
 }
+
+/* FOOTER MOBILE */
 
 @media screen and (max-width: 768px)
 {
@@ -869,12 +872,11 @@ footer {
     flex-direction: column;
     height:100%;
     gap:20px;
-    padding:0;
+    padding:25px;
+}
 }
 
-
-
-}
+/* FOOTER TABLETTE */
 
 @media screen and (min-width:769px) and (max-width: 992px)
 {
