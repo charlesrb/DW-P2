@@ -88,7 +88,7 @@ nav {
 
 /* HEADER MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 main {
     width:100%;
@@ -154,7 +154,7 @@ nav {
 
 /* HEADER TABLETTE */
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 main {
     width:100%;
@@ -289,7 +289,7 @@ input[type="checkbox"] {
 
 /* FILTRES MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 
 .fa-search {
@@ -347,7 +347,7 @@ button span {
     margin-top:35px;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     #central {
         display:flex;
@@ -458,7 +458,7 @@ button span {
 
 /* HEBERGEMENT A MARSEILLE MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 #accomodation-list {
     width:100%;
@@ -489,7 +489,7 @@ button span {
 
 /* HEBERGEMENT A MARSEILLE TABLETTE */
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {   
 #accomodation-list {
     width:100%;
@@ -605,7 +605,7 @@ aside {
 
 /* HEBERGEMENTS POPULAIRES MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 aside {
     width:100%;
@@ -627,9 +627,18 @@ div.pop {
 }
 }
 
+/* HEBERGEMENT POPULAIRE BREAKPOINT < 330 */
+
+@media screen and (max-width:330px)
+{
+    .pop-title {
+        font-size:14px;
+    }
+}
+
 /* HEBERGEMENTS POPULAIRES TABLETTE */
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 aside {
     width:100%;
@@ -767,7 +776,7 @@ div.pop {
 
 /* ACTIVITIES MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 #activities {
     width:90%;
@@ -801,7 +810,7 @@ div.pop {
 
 /* ACTIVITIES TABLETTE */
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 #activities {
     width:90%;
@@ -858,7 +867,7 @@ footer h3 {
 
 /* FOOTER MOBILE */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 
 footer {
@@ -878,7 +887,7 @@ footer {
 
 /* FOOTER TABLETTE */
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px) and (max-width: 992px)
 {
 
 footer {
