@@ -373,7 +373,7 @@ button span {
     background-color: var(--lightGrey);
     border-radius: 50px;
     width:65%;
-    padding:45px 0 45px 10px;
+    padding:45px 0 45px 0;
 }
 
 #accomodation-list h2 {
@@ -523,15 +523,15 @@ aside {
     background-color: var(--lightGrey);
     border-radius: 50px;
     width:35%;
-    padding:45px 0 45px 10px;
+    padding:45px 10px 45px 10px;
 }
 
 #title-aside {
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding:0 40px;
+    padding:0;
 }
 
 .fa-chart-line {
@@ -548,7 +548,7 @@ aside {
     margin-bottom:35px;
     gap:35px;
     width:100%;
-    padding:0px 35px 0px 35px;
+    padding:0px 10px 0px 10px;
 }
 
 .pop-lien {
@@ -570,6 +570,7 @@ aside {
     height: 144px;
     width:100%;
     margin:auto;
+    padding-right:5px;
 }
 
 .pop-img img {
@@ -591,6 +592,13 @@ aside {
     margin-bottom:0px;  
 }
 
+@media screen and (min-width: 993px) and (max-width:1040px)
+{
+.pop-title {
+    font-size:13px;
+}
+}
+
 .pop-title-price {
     display:flex;
     flex-direction: column;
@@ -601,6 +609,10 @@ aside {
     font-size:12px;
     font-weight: 400;
     padding-top:0px;
+}
+
+.fa-star {
+    font-size:12px;
 }
 
 /* HEBERGEMENTS POPULAIRES MOBILE */
